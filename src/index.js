@@ -3,14 +3,17 @@ import "tachyons";
 
 import * as serviceWorker from "./serviceWorker";
 
+import { applyMiddleware, createStore } from "redux";
+
 import App from "./containers/App.js";
 import { Provider } from "react-redux";
 import React from "react";
 import ReactDOM from "react-dom";
-import { createStore } from "redux";
+import { createLogger } from "redux-logger";
 import { searchRobots } from "./reducers";
 
-const store = createStore(searchRobots);
+const logger = createLogger();
+const store = createStore(searchRobots, applyMiddleware(logger));
 
 ReactDOM.render(
   <Provider store={store}>
