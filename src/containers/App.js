@@ -1,7 +1,7 @@
 import "./App.css";
 
 import CardList from "../components/CardList.js";
-import ErrorBoundary from "../components/ErrorBoundary.js";
+import ErrorBoundary from "./ErrorBoundary.js";
 import React from "react";
 import Scroll from "../components/Scroll.js";
 import SearchBox from "../components/SearchBox.js";
