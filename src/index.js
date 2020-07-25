@@ -4,6 +4,7 @@ import "tachyons";
 import * as serviceWorker from "./serviceWorker";
 
 import App from "./containers/App.js";
+import { Provider } from "react-redux";
 import React from "react";
 import ReactDOM from "react-dom";
 
